@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*!Variables css*/
+:root {
+   /**Colores**/
+   --color-principal: #E5E5E5;
+   --color-botones: #2A7AE4;
+   --color-secciones: #EAF2FD;
+   --color-letra: #464646;
+   --color-blanco: #ffffff
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   height: 100vh;
+   width: 100%;
+   font-size: 62.5%;
+}
+
+body {
+   background-color: var(--color-principal);
+   color: var(--color-letra);
+   font-size: 2rem;
+   font-family: Raleway;
+}
+
+li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: var(--color-letra)
+}
+
+input {
+   color: rgba(162, 162, 162, 1);
+   width: 27.5rem;
+   height: 4rem;
+   padding: .5rem;
+   border: none;
+   margin-bottom: 1rem;
+   border-radius: .4rem;
+   border-bottom: 1px solid #C8C8C8;
+   font-size: 16px;
+}
+
+textarea {
+   color: rgba(162, 162, 162, 1);
+   font-family: inherit;
+   border: none;
+   resize: none;
+   width: 328px;
+   height: 8.2rem;
+   padding: 1rem;
+   font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+   outline: none;
+}
+
+button {
+   width: 10.9rem;
+   padding: 12px 16px;
+   background-color: var(--color-botones);
+   border: none;
+   color: var(--color-blanco);
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #EAF2FD;
+   color: var(--color-letra);
+}
+
+span {
+   cursor: pointer;
+}
+
+h3,
+p {
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+}
+
+.header__container,
+.footer__container {
+   background-color: var(--color-blanco);
+}
+
+.header__container-items {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__container-items figure img {
+   width: 100px;
+   margin-left: 1rem;
+}
+
+.header--busqueda {
+   padding: 1rem;
+}
+
+.main__container-login {
+   text-align: center;
+   margin-bottom: 7.6rem;
+   margin-top: 9.7rem;
+}
+
+.main__container-login form label {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main__container-info {
+   text-align: center;
+   background-color: #EAF2FD;
+   padding: 1rem;
+}
+
+.empresa--info ul li {
+   margin-bottom: 1rem;
+}
+
+.empresa--contacto {
+   text-align: initial;
+   margin-left: 2rem;
+}
+
+.empresa--contacto form label input {
+   width: 328px;
+   height: 56px;
+}
+
+.empresa--contacto form button {
+   width: 144px;
+   height: 43px;
+   margin-top: .5rem;
+   margin-bottom: 1rem;
+}
+
+.footer__container {
+   height: 10rem;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.input-busqueda {
+   display: none;
+}
+
+.footer__container p {
+   margin: 0;
+}
+
+.footer__container p em {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+}
+
+/*Principal*/
+
+
+.button--blanco {
+   background-color: var(--color-blanco);
+   border: 1px solid var(--color-botones);
+   color: var(--color-botones);
+}
+
+.main__container--presentacion {
+   height: 192px;
+   color: var(--color-blanco);
+   background-image: url("../images/banner.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: -5rem;
+   padding: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.main__container--presentacion p {
+   margin: 0 0 1rem 0;
+   font-size: 14px;
+}
+
+.main__cartas {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   place-items: center;
+}
+
+.carta--title {
+   font-weight: 700;
+   font-size: 22px;
+}
+
+.cartas--tipo {
+   display: flex;
+   justify-content: space-between;
+   margin: 1.5rem;
+   overflow: hidden;
+}
+
+.cartas--tipo h3 {
+   margin: 0;
+}
+
+.carta {
+   margin-bottom: 1rem;
+   font-size: 14px;
+}
+
+.cartas--tipo span,
+.carta a {
+   color: var(--color-botones);
+   font-weight: 700;
+}
+
+.carta p {
+   font-weight: 700;
+   line-height: 32px;
+   margin: 0
+}
+
+.carta-escondida {
+   display: none;
+}
+
+/*Main*/
+.main--productos {
+   margin: 1.5rem;
+}
+
+.main--productos form button {
+   width: 15rem;
+}
+
+/*Formulario*/
+.main--formulario {
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+
+.main--formulario form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main--formulario input,
+.main--formulario button {
+   width: 328px;
+   height: 56px;
+}
+
+.main--formulario textarea {
+   width: 328px;
+   height: 78 px;
+}
+
+/*!Descripcion*/
+.producto--descripcion div {
+   padding: 1.5rem;
+}
+
+.producto--descripcion div p {
+   margin-top: 1rem;
+}
+
+.producto--descripcion figure img {
+   object-fit: cover;
+   width: 100%;
+}
+
+@media (min-width: 530px) {
+   .main__container--presentacion {
+      background-position-y: -10rem;
+   }
+
+   .empresa--contacto form {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .empresa--contacto form label input,
+   .empresa--contacto form label textarea {
+      width: 50rem;
+   }
+}
+
+@media (min-width : 700px) {
+   .main__container--presentacion {
+      background-position-y: -16rem;
+   }
+
+   .header__container-items {
+      position: relative;
+      height: 72px;
+   }
+
+   .header__container-items button {
+      position: absolute;
+      right: 2rem;
+   }
+
+   .header__container-items .header--busqueda {
+      position: absolute;
+      left: 12rem;
+   }
+
+   .main__cartas {
+      grid-template-columns: repeat(4, 1fr);
+   }
+
+   .main--productos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .main--formulario input,
+   .main--formulario button,
+   .main--formulario textarea {
+      width: 700px;
+      height: 56px;
+   }
+}
+
+@media (min-width: 800px) {
+   .main__container-info {
+      display: flex;
+      justify-content: space-around;
+   }
+
+   .main__container-login form button {
+      width: 423px;
+      height: 50px;
+   }
+
+   .header__container {
+      padding: 1rem;
+   }
+
+   .header__container-items {
+      justify-content: left;
+   }
+
+   .header--busqueda {
+      width: 30rem;
+      height: 4rem;
+      border-radius: 20px;
+      background-color: #F5F5F5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2rem;
+      overflow: hidden;
+   }
+
+   .input-busqueda {
+      display: block;
+      background-color: inherit;
+      border-bottom: none;
+      margin: 0 auto;
+   }
+
+   input {
+      width: 423px;
+      height: 63.13px;
+   }
+
+   .producto--descripcion {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+   }
+
+   .main__cartas {
+      margin-bottom: 2rem;
+   }
+}
+
+@media (min-width : 950px) {
+
+   .main__container--presentacion {
+      height: 352px;
+      background-position-y: -25rem;
+   }
+
+   .main__cartas {
+      grid-template-columns: repeat(6, 1fr);
+   }
+
+   .carta-escondida {
+      display: block;
+   }
+
+   .producto--descripcion {
+      height: 403px;
+   }
+
+   .producto--descripcion figure {
+      height: 403px;
+      width: 560px;
+   }
+
+   .producto--descripcion figure img {
+      width: inherit;
+      height: inherit;
+   }
+
+   .empresa--info {
+      display: flex;
+      align-items: center;
+   }
+
+   .empresa--info figure{
+      margin-right: 8rem;
+   }
+}
